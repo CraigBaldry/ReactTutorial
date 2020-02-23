@@ -2,20 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-class ShoppingList extends React.Component {
-    render() {
-        return (
-            <div className="shopping-list">
-                <h1>Shopping List for {this.props.name}</h1>
-                <ul>
-                    <li>Instagram</li>
-                    <li>WhatsApp</li>
-                    <li>Oculus</li>
-                </ul>
-            </div>
-        );
-    }
-}
+// class ShoppingList extends React.Component {
+//     render() {
+//         return (
+//             <div className="shopping-list">
+//                 <h1>Shopping List for {this.props.name}</h1>
+//                 <ul>
+//                     <li>Instagram</li>
+//                     <li>WhatsApp</li>
+//                     <li>Oculus</li>
+//                 </ul>
+//             </div>
+//         );
+//     }
+// }
 
 // Example usage: <ShoppingList name="Mark" />
 
@@ -113,14 +113,14 @@ class Game extends React.Component {
 
 // Immutability definition and why so good
 
-//data change with mutation
-var player = {score: 1, name: 'Jeff'};
-player.score = 2;
-// Now player is {score: 2, name: 'Jeff'}
+// //data change with mutation
+// var player = {score: 1, name: 'Jeff'};
+// player.score = 2;
+// // Now player is {score: 2, name: 'Jeff'}
 
-var player = {score: 1, name: 'Jeff'};
+// var player = {score: 1, name: 'Jeff'};
 
-var newPlayer = Object.assign({}, player, {score: 2});
+// var newPlayer = Object.assign({}, player, {score: 2});
 // Now player is unchanged, but newPlayer is {score: 2, name: 'Jeff'}
 
 // Or if you are using object spread syntax proposal, you can write:
